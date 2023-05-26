@@ -1,0 +1,7 @@
+- Starting with impure deps and build
+- Use nix for dependencies using `nix-shell`/`nix shell`
+- Make the build pure
+- Build with Nix -> pure build required in the sandbox
+- Deploy with Nix
+  - Get runtime dependencies from Nix
+  - `nix-copy-closure` `nix ...`
