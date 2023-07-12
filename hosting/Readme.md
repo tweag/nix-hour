@@ -1,0 +1,19 @@
+Very ad-hoc instructions on how to host a nix hour
+
+- In YouTube, schedule a stream with:
+  - Select stream key: 1440p30 Test 2 (RTMP, 1440p)
+  - Copy the generated stream key
+- Open OBS, switch to my own scene
+  - Enter the stream key in the settings
+- Run ./script.sh, follow instructions, which does automatically:
+  - Turn off notifications off
+  - Open jitsi on the left screen in full screen
+  - Ensure that xmobar doesn't crash
+- Clear the workspaces on the main monitor
+- In jitsi:
+  - Enable audio, webcam and full screen sharing
+  - Go to the "You are sharing your screen" view
+  - Open chat
+- Start the stream with Ctrl-Shift-S
+- When somebody else is sharing their screen, switch to the other scene using the keyboard button and optionally hide the chat
+- Stop the stream with Ctrl-Shift-S
