@@ -11,6 +11,8 @@ Very ad-hoc instructions on how to host a nix hour
   - Ensure that xmobar doesn't crash
 - Clear the workspaces on the main monitor
 - In jitsi:
+  - Make sure the scale is at 100%
+  - Make sure to press F11 for fullscreen
   - Enable audio, webcam and full screen sharing
   - Go to the "You are sharing your screen" view
   - Open chat

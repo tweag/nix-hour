@@ -14,7 +14,7 @@ begin() {
   if ! xdotool search --name "$windowName"; then
     firefox --new-window https://meet.jit.si/nix-hour
   fi
-  echo -n "Please make the jitsi window floating, full screen it using F11, then press enter"
+  echo -n "Please make the jitsi window floating, then press enter"
   read
   xdotool search --name "$windowName" windowsize %1 2254 1267 windowmove %1 0 30
   echo "Running.."
