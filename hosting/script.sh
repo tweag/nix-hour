@@ -2,6 +2,7 @@ windowName='Nix Hour \| Jitsi Meet — Mozilla Firefox'
 
 begin() {
   dunstctl set-paused true
+  systemctl stop zrepl
 
   while true; do
     xmobar-custom 0
@@ -23,6 +24,7 @@ begin() {
 end() {
   kill $(jobs -p)
   dunstctl set-paused false
+  systemctl start zrepl
   rm -rf "$tmp"
 }
 
