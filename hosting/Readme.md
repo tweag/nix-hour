@@ -6,13 +6,13 @@ Very ad-hoc instructions on how to host a nix hour
 - Open OBS, switch to my own scene
   - Enter the stream key in the settings
 - Run ./script.sh, follow instructions, which does automatically:
-  - Turn off notifications off
+  - Turn notifications off
   - Open jitsi on the left screen in full screen
   - Ensure that xmobar doesn't crash
   - Stop the backup service, don't want it to use up all the bandwidth
 - Clear the workspaces on the main monitor
 - In jitsi:
-  - Make sure the scale is at 100%
+  - Make sure the scale is at 130%
   - Make sure to press F11 for fullscreen
   - Enable audio, webcam and full screen sharing
   - Go to the "You are sharing your screen" view
