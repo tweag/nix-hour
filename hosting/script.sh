@@ -13,7 +13,7 @@ begin() {
   done &
 
   if ! xdotool search --name "$windowName"; then
-    firefox --new-window https://meet.jit.si/nix-hour
+    firefox --new-window https://meet.zrh.init7.net/nix-hour
   fi
   echo -n "Please make the jitsi window floating, then press enter"
   read
