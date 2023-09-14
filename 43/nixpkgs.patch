@@ -1,0 +1,71 @@
+diff --git a/pkgs/development/interpreters/python/cpython/default.nix b/pkgs/development/interpreters/python/cpython/default.nix
+index 6778dc460e05..9c8a01797566 100644
+--- a/pkgs/development/interpreters/python/cpython/default.nix
++++ b/pkgs/development/interpreters/python/cpython/default.nix
+@@ -1,4 +1,4 @@
+-{ lib, stdenv, fetchurl, fetchpatch, fetchgit
++{ lib, stdenv, fetchurl, fetchzip, fetchpatch, fetchgit
+ , bzip2
+ , expat
+ , libffi
+@@ -151,10 +151,18 @@ let
+     "$out/bin/python"
+   else pythonForBuild.interpreter;
+ 
+-  src = fetchurl {
+-    url = with sourceVersion; "https://www.python.org/ftp/python/${major}.${minor}.${patch}/Python-${version}.tar.xz";
+-    inherit hash;
+-  };
++  src =
++    if sourceVersion ? url then
++      fetchzip {
++        url = sourceVersion.url;
++        inherit hash;
++      }
++    else
++      fetchurl {
++        url = with sourceVersion;
++          "https://www.python.org/ftp/python/${major}.${minor}.${patch}/Python-${version}.tar.xz";
++        inherit hash;
++      };
+ 
+   # The CPython interpreter contains a _sysconfigdata_<platform specific suffix>
+   # module that is imported by the sysconfig and distutils.sysconfig modules.
+diff --git a/pkgs/development/interpreters/python/default.nix b/pkgs/development/interpreters/python/default.nix
+index f80f2f16ccd4..98fc6cd0a6bd 100644
+--- a/pkgs/development/interpreters/python/default.nix
++++ b/pkgs/development/interpreters/python/default.nix
+@@ -103,6 +103,20 @@ in {
+     inherit passthruFun;
+   };
+ 
++  python3_unstable = callPackage ./cpython {
++    self = __splicedPackages.python3_unstable;
++    sourceVersion = {
++      major = "3";
++      minor = "13";
++      patch = "0";
++      suffix = "unstable";
++      url = "https://github.com/python/cpython/archive/4a54074a0f5579d417445ec28427cd0ed5aa01f4.tar.gz";
++    };
++    hash = "sha256-/XHz+3Asp5++WtiTscmnSHX7NViv4C0Qg6mmx7TFoRY=";
++    inherit (darwin) configd;
++    inherit passthruFun;
++  };
++
+   # Minimal versions of Python (built without optional dependencies)
+   python3Minimal = (callPackage ./cpython ({
+     self = __splicedPackages.python3Minimal;
+diff --git a/pkgs/top-level/all-packages.nix b/pkgs/top-level/all-packages.nix
+index 11c1017db35b..f7ac8723b3a7 100644
+--- a/pkgs/top-level/all-packages.nix
++++ b/pkgs/top-level/all-packages.nix
+@@ -18112,7 +18112,7 @@ with pkgs;
+   };
+ 
+   pythonInterpreters = callPackage ./../development/interpreters/python { };
+-  inherit (pythonInterpreters) python27 python38 python39 python310 python311 python312 python3Minimal pypy27 pypy39 pypy38 pypy37 rustpython;
++  inherit (pythonInterpreters) python27 python38 python39 python310 python311 python312 python3_unstable python3Minimal pypy27 pypy39 pypy38 pypy37 rustpython;
+ 
+   # List of extensions with overrides to apply to all Python package sets.
+   pythonPackagesExtensions = [ ];
