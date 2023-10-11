@@ -96,5 +96,59 @@
         (lib.concatStringsSep "\n")
       ];
     };
+
+    youtube = {
+      dir = lib.mkOption {
+        type = lib.types.path;
+        readOnly = true;
+        default = episode_dir;
+      };
+
+      id = lib.mkOption {
+        type = lib.types.str;
+        default =
+          if options.youtube_id.isDefined
+          then config.youtube_id
+          else "";
+      };
+
+      title = lib.mkOption {
+        type = lib.types.str;
+        default = config.title;
+      };
+
+      description = lib.mkOption {
+        type = lib.types.str;
+        default = lib.concatStringsSep "" ([config.description]
+          ++ lib.optionals options.timestamps_txt.isDefined [
+            ''
+
+              ${config.timestamps_txt}
+            ''
+          ]);
+      };
+
+      scheduled_start_time = lib.mkOption ({
+          type = lib.types.int;
+        }
+        // lib.optionalAttrs previous_episode.options.youtube.scheduled_start_time.isDefined {
+          default = previous_episode.config.youtube.scheduled_start_time + (7 * 24 * 60 * 60);
+        });
+
+      enable_auto_start = lib.mkOption {
+        type = lib.types.bool;
+        default = true;
+      };
+
+      enable_auto_stop = lib.mkOption {
+        type = lib.types.bool;
+        default = false;
+      };
+
+      enable_dvr = lib.mkOption {
+        type = lib.types.bool;
+        default = true;
+      };
+    };
   };
 }

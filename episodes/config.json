@@ -1,0 +1,5 @@
+{
+  "token_file"    : "token.json",
+  "client_id"     : REPLACEME,
+  "client_secret" : REPLACEME
+}

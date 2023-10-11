@@ -36,7 +36,7 @@
         }
       ) {
         prev = {
-          options.date.isDefined = false;
+          options.youtube.scheduled_start_time.isDefined = false;
         };
         res = [];
       })
@@ -44,4 +44,5 @@
   ];
 in {
   inherit episodes;
+  tool = pkgs.callPackage ./tool.nix {};
 }
