@@ -89,8 +89,8 @@
               time_sec = builtins.foldl' (res: elem: res * 60 + (lib.toIntBase10 elem)) 0 (lib.splitString ":" time_str);
             in
               if builtins.length parts == 1
-              then line
-              else "[${time_str}](https://www.youtube.com/watch?v=${config.youtube_id}&t=${builtins.toString time_sec}): ${comment}"
+              then "  " + line
+              else "* [${time_str}](https://www.youtube.com/watch?v=${config.youtube_id}&t=${builtins.toString time_sec}): ${comment}"
           )
         )
         (lib.concatStringsSep "\n")
