@@ -20,7 +20,14 @@
 
     title = lib.mkOption {
       type = lib.types.str;
-      default = "Nix Hour #${config.episode_number}";
+      default =
+        "Nix Hour #${config.episode_number}"
+        + lib.optionalString (config.subtitle != "") " [${config.subtitle}]";
+    };
+
+    subtitle = lib.mkOption {
+      type = lib.types.str;
+      default = "";
     };
 
     readme_md = lib.mkOption {
