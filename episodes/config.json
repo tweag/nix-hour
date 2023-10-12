@@ -1,5 +1,7 @@
 {
   "token_file"    : "token.json",
+  "user_id"       : REPLACEME,
+  "channel_id"    : "UCI1Z201n-8OelkSg0DVOsng",
   "client_id"     : REPLACEME,
   "client_secret" : REPLACEME
 }

@@ -11,9 +11,12 @@
       type = lib.types.str;
     };
 
-    youtube_id = lib.mkOption {
-      type = lib.types.str;
-    };
+    youtube_id = lib.mkOption ({
+        type = lib.types.str;
+      }
+      // lib.optionalAttrs (builtins.pathExists (episode_dir + "/youtube_id")) {
+        default = lib.removeSuffix "\n" (builtins.readFile (episode_dir + "/youtube_id"));
+      });
 
     title = lib.mkOption {
       type = lib.types.str;
