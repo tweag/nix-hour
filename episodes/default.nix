@@ -37,6 +37,7 @@
       ) {
         prev = {
           options.youtube.scheduled_start_time.isDefined = false;
+          options.description.isDefined = false;
         };
         res = [];
       })
