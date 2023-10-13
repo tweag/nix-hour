@@ -1,0 +1,18 @@
+00:00 Intro
+00:27 Q: k3s and cgroup scopes on NixOS
+01:43 Ways to isntall package on NixOS: nix-env, nix-shell, systemPackages
+03:15 Using services from NixOS modules
+05:03 Looking for information about cgroups
+07:20 Q: Overriding user@.service unit parameters in NixOS
+09:02 Tracking down systemd unit in NixOS configuration
+18:41 Checking NixOS configuration values without rebuilding the system
+22:37 Where NixOS module system looks for configuration files
+26:27 Evaluating unit text without building
+30:11 Overriding config of user@.service
+34:26 Example: looking for stateVersion declaration
+36:06 Operator precedence in Nix
+42:10 Q: How does RFC process work in Nix(OS)
+42:52 When to create RFC
+45:22 RFC process overview
+53:55 Q: Compare Nix to Spack
+55:35 Outro

@@ -1,0 +1,21 @@
+00:00 Intro
+00:34 GitHub issue: How to package shell scripts
+01:15 Packaging a simple shell script with runCommand
+03:27 Using patchShebangs to fix refernce to Bash in shebang
+04:28 Providing tools in PATH with makeWrapper
+07:28 Binaries are not always in default output
+08:00 Aside: querying nixpkgs using Nix language
+11:28 Making sure to use output with binaries with getBin
+13:34 Using makeBinPath to generate PATH
+15:55 Switching to wrapProgram to wrap script in place
+20:13 Finding the source of self-referential result
+21:01 Making PATH "pure" by overwriting it in the wrapper
+22:44 Falling back on hardcoded binaries
+23:38 Trying out resholve to sub binary paths in the script
+32:07 Checking out resholve documentation
+35:28 Switch to resholve.writeScriptBin
+38:40 Manually resolving tool paths in the script
+41:09 Looking at resholve Nix API implementation
+42:39 Checking out nixpkgs writers for various languages
+44:03 Inlining values from Nix into the script using substitute and substituteInPlace
+49:50 Signoff

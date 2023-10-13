@@ -1,0 +1,16 @@
+00:00 Intro, audience question about npmlock2nix
+00:50 Look at npmlock2nix
+03:11 Starting a new Nix project using niv
+04:47 Getting example of npmlock2nix failing
+07:03 Adding npmlock2nix to the project
+12:00 How does npmlock2nix work
+19:11 Overriding buildInputs attribute for mkShell result
+23:02 Removing unwanted item from buildInputs
+25:10 Aside: Comparing derivations in Nix
+28:48 Removing unwanted item from buildInputs
+29:47 Debugging with lib.debug.trace
+34:15 Overriding shellHook
+40:15 Debugging unexpected dependency of derivation
+48:35 Looking at the end result
+49:03 How to make npmlock2nix more overridable
+57:25 Out of time, wrapping up

@@ -1,0 +1,15 @@
+00:00 Intro and looking at the question
+01:17 How users.extraUsers is defined and why it exists alongside users.users
+10:02 Why double users.users
+11:00 Declaring, defining and using your own module system options
+17:32 The attrsOf option type
+22:29 The submodule option type
+31:05 Problem with declaring options in submodule definitions
+34:10 Looking at the option type documentation
+35:24 The useful pattern of combining attrsOf and submodule
+42:48 Accessing the attribute name in the submodule
+44:52 Parametrized options in the manual
+47:12 Extending parametrized options, merging types
+52:28 Implementing extended parametrized option behavior
+54:12 Trying to build the system, takes too long though
+56:00 Recommendation: Use attrsOf instead of listOf for improved overridability

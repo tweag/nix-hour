@@ -1,0 +1,21 @@
+00:00 Intro, issues overview
+01:49 Looking at nixos-rebuild
+02:59 Building with (nixpkgs/nixos)
+06:24 Passing NixOS configuration via NIX_PATH/-I
+08:11 Using nixos directory from NIX_PATH
+09:21 Specifying channel on command line
+10:05 Using "nixos" attribute of nixpkgs to build system
+12:43 What is "system" attribute
+14:53 Fixing minimal configuration.nix
+15:41 What is stateVersion
+19:13 How flake is built in nixos-rebuild
+20:28 Building and deploying on other hosts using nixos-rebuild
+21:37 Switching system profile
+24:30 Switching the system to new configuration
+26:12 "switch-to-configuration" script
+30:07 "activate" script
+32:16 Atomically changing /etc directory
+34:28 Adding custom activation scripts
+39:30 When is "/run/current-system" symlink set
+44:12 Custom activation scripts ordering
+45:31 Signoff

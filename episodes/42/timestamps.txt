@@ -1,0 +1,29 @@
+00:00 Intro, no Nix Hour next week
+00:45 Q: finalAttrs pattern benefits, overrideAttrs and overlays
+06:36 Overriding version and src with overrideAttrs
+09:46 Recursive attribute sets
+10:34 Using fixed point, lib.fix
+11:52 How overlays work
+13:09 Using finalAttrs in derivation
+15:04 Using finalAttrs in overrideAttrs
+17:46 passthru.tests: nixosTest using finalPackage
+21:54 finalAttrs examples from nixpkgs
+23:38 Q: NixOS configuration arguments
+25:40 Nix module args: lib
+26:26 Nix module args: config
+29:04 Nix module args: options
+32:30 Nix module args: specialArgs
+38:20 Nix module args: ..., builtins.functionArgs
+39:26 NixOS specific arguments
+40:39 NixOS module args: modulesPath
+42:23 NixOS module args: baseModules, extraModules
+43:33 NixOS module args: extendModules
+45:34 NixOS module args: pkgs and utils
+46:17 NixOS module args: moduleType
+46:55 Q: Asking users to accept unfree licenses 
+47:38 requireFile
+51:07 nix-prefetch-url
+52:02 inlining a script in error message
+54:32 impureEnvVars
+57:27 Q: Language servers for Nix
+59:15 Outro

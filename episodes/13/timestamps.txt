@@ -1,0 +1,16 @@
+00:00 Intro and question
+01:24 Nixpkgs entry point and how to get the top-level value
+04:01 From default.nix over internal overlays to all-packages.nix
+11:52 Package definitions their (non-)structure in all-packages.nix
+19:11 Rough directory categorization
+20:19 Querying attribute position using builtins.unsafeGetAttrPos
+22:51 Disallowing alias use and demonstration
+26:01 CLI function auto-calling
+30:30 Passing arguments to Nix expressions from the CLI
+32:00 Continuing disallowing alias demonstration
+33:43 Trying to find the definition of stdenv.mkDerivation by definition (but then giving up and jumping to it directly)
+38:12 Looking at some mkDerivation arguments
+40:47 How meta.position works
+43:06 mkDerivation attribute string coercion into environment variables
+47:00 List to string coercion
+50:25 Using structured attributes

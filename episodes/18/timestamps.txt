@@ -1,0 +1,17 @@
+00:00 Question: What's callPackage, newScope and makeScope?
+01:20 A simple interdependent package set using pkgs.callPackage
+04:42 Using a fixed-point function for less repetition
+07:03 Making the package set extensible using lib.makeExtensible
+12:55 Using makeScope and newScope for extending the nixpkgs scope
+16:35 A potential approach of nesting your own packages to avoid accidental overrides
+18:27 Changing how the default is passed
+19:45 Further nesting scopes using makeScope
+23:13 Cross-compilation with makeScopeWithSplicing
+27:21 Overlaying using overrideScope, accidentally mixing up the argument ordering
+30:49 makeScope overview
+32:36 Question: How to not have all Nixpkgs packages in the callPackage scope?
+34:42 Using makeExtensible to create a new empty callPackage scope
+37:52 Using makeScope to create a new empty callPackage scope
+42:37 Comparing the different scope approaches
+45:48 Manually evaluating a fixed-point function
+52:20 Using composeExtensions to compose two extensions into one

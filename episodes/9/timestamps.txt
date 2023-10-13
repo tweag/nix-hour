@@ -1,0 +1,19 @@
+00:00 Context and running fluentd in a VM
+02:22 Figuring out how to package fluentd plugins
+05:15 Nixpkgs update scripts
+08:55 Adding a fluentd plugin
+09:54 Figuring out how to use fluentd plugins
+14:11 Improved Nix build output with nix-output-monitor
+15:35 Checking if the plugin config works
+17:19 Committing changes for nixpkgs contribution
+20:54 Using the GitHub CLI to fork nixpkgs
+23:08 Pushing the commit and rebasing on master
+25:00 Looking at the PR template
+31:17 Discovering that the service fails to run now
+31:36 Changing the VM terminal dimensions manually
+32:49 Figuring out how to fix the failure
+37:26 Updating the PR with the fixes
+40:09 Continuing filling out the PR template
+41:04 Linking the NixOS test to the package
+44:06 Checking if somebody else already made this change
+46:17 Looking at how the update script runner is implemented

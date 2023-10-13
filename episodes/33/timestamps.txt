@@ -1,0 +1,28 @@
+00:00 Intro
+00:24 Q: Why does Python needs "self" argument to override OpenSSL dependency?
+01:07 Verifying locally
+02:51 Using "self" in overlays instead of "rec", compared to "super"
+04:15 Debugging why derivation is left unchanged
+05:58 Looking for python package sources from all-packages.nix
+06:55 Using unsafeGetAttrPos to find package sources.
+08:38 Looking for python defined in aliases.nix
+11:24 Overriding Python packages in overlays.
+13:38 Q: Why does python3Packages exist?
+15:54 Digging into pythonInterpreters
+17:33 pythonPackagesExtensions
+18:21 Cross-compilation support via __splicedPackages, makeScopeWithSplicing
+22:17 Comparing normal Python and spliced one
+24:00 Checking how callPackage generates __splicedPackages
+26:50 Checking how cross-compilation platforms are set
+28:20 Looking at cross-compilation in stdenv
+30:34 Checking Python section of the manual
+32:17 Debugging the nixpkgs overlay
+36:49 Looking at the resulting derivation itself
+44:27 Finding out how openssl argument is handled in Python package
+46:32 Q: How to manage dependencies for Python project with Nix
+47:13 Looking for gdal package in nixpkgs
+49:07 "Installing" python package on NixOS system
+54:41 Adding Python packages to env with python3.withPackages
+55:42 Need for parethesis in packages list
+57:09 Other options
+58:05 Signoff

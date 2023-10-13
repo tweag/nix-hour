@@ -1,0 +1,24 @@
+00:00 Intro and updates
+02:19 Implicit importing into the store from path values
+04:36 result symlink being included in the source
+05:53 Filtering result using builtins.path
+10:46 Debugging the filtering not working
+13:50 lib.cleanSource
+16:41 Composing cleanSource and lib.sourceFilesBySuffices
+19:30 Could comparisons error for different types?
+20:45 Tracing source filtering with lib.sources.trace
+21:40 Link between two builtin and nixpkgs source filtering
+26:00 Using gitignore.nix
+29:36 Filtering multiple result symlinks
+33:33 Importing single files into the store
+34:24 Interlude, topic switch
+35:46 Default mkDerivation check phases
+39:28 pythonPackages' checkPhase is installCheckPhase
+40:41 Testing with a separate derivation
+42:45 NixOS tests associated to nixpkgs packages
+44:37 Writing your own NixOS tests
+47:59 Writing a NixOS test script
+52:28 Debugging some error
+53:52 Default KVM requirement for NixOS tests
+54:44 Using finalPackage for consistency with overrides
+58:00 Outro
