@@ -11,6 +11,8 @@ Very ad-hoc instructions on how to host a nix hour
   - Ensure that xmobar doesn't crash
   - Stop the backup service, don't want it to use up all the bandwidth
 - Clear the workspaces on the main monitor
+- Turn off the speaker
+  - Otherwise there's a hum in the background
 - In jitsi:
   - Make sure the scale is at 130%
   - Make sure to press F11 for fullscreen
