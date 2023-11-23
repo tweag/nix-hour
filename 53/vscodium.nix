@@ -1,26 +1,40 @@
-{ sources, libglvnd, lib, stdenv, callPackage, fetchurl, nixosTests, commandLineArgs ? "", useVSCodeRipgrep ? stdenv.isDarwin }:
+{
+  sources,
+  libglvnd,
+  lib,
+  stdenv,
+  callPackage,
+  fetchurl,
+  nixosTests,
+  commandLineArgs ? "",
+  useVSCodeRipgrep ? stdenv.isDarwin,
+}:
 
 let
   inherit (stdenv.hostPlatform) system;
   throwSystem = throw "Unsupported system: ${system}";
 
-  plat = {
-    x86_64-linux = "linux-x64";
-    x86_64-darwin = "darwin-x64";
-    aarch64-linux = "linux-arm64";
-    aarch64-darwin = "darwin-arm64";
-    armv7l-linux = "linux-armhf";
-  }.${system} or throwSystem;
+  plat =
+    {
+      x86_64-linux = "linux-x64";
+      x86_64-darwin = "darwin-x64";
+      aarch64-linux = "linux-arm64";
+      aarch64-darwin = "darwin-arm64";
+      armv7l-linux = "linux-armhf";
+    }
+    .${system} or throwSystem;
 
   archive_fmt = if stdenv.isDarwin then "zip" else "tar.gz";
 
-  sha256 = {
-    x86_64-linux = "1h2s90h1a4b4r9rqafd5fj95mx21xqlp3msv8fxfjd2kkfl8bdcl";
-    x86_64-darwin = "1cprq4cy01cmyqrvv5p9f09k7h5p4nj9jbk4lrlnyj1z2xvhcls1";
-    aarch64-linux = "0g9j14vnan10r014309s6mdkizjfpbd83bf1kxx2kk625n87xszc";
-    aarch64-darwin = "10rw2dy3khpxa292zygxi67amxd6s351ha8nxvav5m9xfxlgd2qn";
-    armv7l-linux = "0bw0hfhvwv7wbh2daxgxaxm34v5z5ak4nmmk45ksxc4xsmjc5v23";
-  }.${system} or throwSystem;
+  sha256 =
+    {
+      x86_64-linux = "1h2s90h1a4b4r9rqafd5fj95mx21xqlp3msv8fxfjd2kkfl8bdcl";
+      x86_64-darwin = "1cprq4cy01cmyqrvv5p9f09k7h5p4nj9jbk4lrlnyj1z2xvhcls1";
+      aarch64-linux = "0g9j14vnan10r014309s6mdkizjfpbd83bf1kxx2kk625n87xszc";
+      aarch64-darwin = "10rw2dy3khpxa292zygxi67amxd6s351ha8nxvav5m9xfxlgd2qn";
+      armv7l-linux = "0bw0hfhvwv7wbh2daxgxaxm34v5z5ak4nmmk45ksxc4xsmjc5v23";
+    }
+    .${system} or throwSystem;
 
   sourceRoot = lib.optionalString (!stdenv.isDarwin) ".";
 
@@ -63,16 +77,27 @@ let
       downloadPage = "https://github.com/VSCodium/vscodium/releases";
       license = licenses.mit;
       sourceProvenance = with sourceTypes; [ binaryNativeCode ];
-      maintainers = with maintainers; [ synthetica bobby285271 ludovicopiero ];
+      maintainers = with maintainers; [
+        synthetica
+        bobby285271
+        ludovicopiero
+      ];
       mainProgram = "codium";
-      platforms = [ "x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin" "armv7l-linux" ];
+      platforms = [
+        "x86_64-linux"
+        "x86_64-darwin"
+        "aarch64-linux"
+        "aarch64-darwin"
+        "armv7l-linux"
+      ];
     };
   };
 in
 
-_-'-_.overrideAttrs (prevAttrs: {
-  postFixup = lib.optionalString stdenv.isLinux ''
-    patchelf --add-needed ${libglvnd}/lib/libGLESv2.so.2 $out/lib/vscode/codium
-  '';
-})
-
+_-'-_.overrideAttrs (
+  prevAttrs: {
+    postFixup = lib.optionalString stdenv.isLinux ''
+      patchelf --add-needed ${libglvnd}/lib/libGLESv2.so.2 $out/lib/vscode/codium
+    '';
+  }
+)
