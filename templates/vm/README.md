@@ -22,18 +22,18 @@ Comes with:
 - The current directory is shared at `/etc/nixos` in the VM
 - The `/nix/store` is shared with the VM
 - No persistent disk otherwise, all changes are discarded when the VM is stopped
-- System-wide nixpkgs overlays in [`nixpkgs/overlays.nix`](./nixpkgs/overlays.nix) and config in [`nixpkgs/config.nix`](./nixpkgs/config.nix)
+- System-wide Nixpkgs overlays in [`nixpkgs/overlays.nix`](./nixpkgs/overlays.nix) and config in [`nixpkgs/config.nix`](./nixpkgs/config.nix)
 - Shell history continuously written to [`history`](./history) for persistence across restarts and as searchable reference material
 - Neovim (with `vim` alias) as default editor, git and firefox installed
 - Auto-adjusting screen size
 
-After making changes to any files, changes can be applied wiwhin the VM without restarting it using
+After making changes to any files, changes can be applied within the VM without restarting it using
 
 ```
 vm-switch
 ```
 
-The pinned nixpkgs can be updated using
+The pinned Nixpkgs can be updated using
 ```
 npins update nixpkgs
 ```
