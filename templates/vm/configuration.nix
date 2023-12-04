@@ -12,10 +12,8 @@
   users.users = {
     # Configure a normal default user
     me.isNormalUser = true;
-
-    # No passwords
+    # No password
     me.hashedPassword = "";
-    root.hashedPassword = "";
   };
 
   # Add the default user to the wheel group, and make wheel more privileged
@@ -67,6 +65,9 @@
     # - Yes INC_APPEND_HISTORY, such that even when the VM is quit unexpectedly, we have the history
     setOptions = [ "INC_APPEND_HISTORY" ];
   };
+
+  # Prevent the new user dialog in zsh
+  system.userActivationScripts.zshrc = "touch .zshrc";
 
   # Set zsh as the default shell
   users.defaultUserShell = "/run/current-system/sw/bin/zsh";
