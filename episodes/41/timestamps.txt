@@ -1,0 +1,22 @@
+00:00 Intro
+00:19 Q: How does passthru work and why
+01:15 Simple derivation example
+02:32 Adding attributes to derivation attrset with //
+06:54 Overriding derivation that uses // instead of passthru
+09:23 Aside: how runCommand passes script to builder
+11:02 Why use passthru instead of //
+12:45 How does passthru work
+19:10 Escaping env var when passing to derivations
+20:40 Q: How to find what attributes that can be set in flakes
+https://nixos.wiki/wiki/Flakes#Output_schema
+https://nixos.org/manual/nix/stable/command-ref/new-cli/nix3-flake-check.html#evaluation-checks
+27:15 Q: Using services from different versions of NixOS in flake
+35:02 Aside: How master differs from unstable
+38:20 Back to using service available in nixos-unstable
+40:34 Aside: Attribute sets and path interpolation to strings
+44:20 Back to importing module from nixos-unstable
+46:30 Infinite recursion when using NixOS module arguments
+47:44 Aside: Using nix-instantiate to build NixOS configuration
+52:03 Back to infinite recursion, specialArgs
+53:41 Adding package from unstable to NixOS configuration with nixpkgs.overlays
+59:16 Outro

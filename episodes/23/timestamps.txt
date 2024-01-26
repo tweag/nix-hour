@@ -1,0 +1,13 @@
+00:00 Intro
+01:17 From the NixOS gnome download to the channels
+03:55 From the channels to the Hydra evaluation
+05:26 From the Hydra evaluation to the Nix expression
+07:00 Failing to figure out where the attribute is defined when I should've looked at the `nixos` attribute!
+09:09 Finding the iso_gnome definition and looking at its module
+11:01 Trying to figure out why it doesn't substitute from Hydra prebuilt version
+30:10 Trying out Hydra's "reproduce locally" script
+34:51 Giving up and instead starting to build a VM with gnome by unrolling imports
+39:15 Building the VM using nixos-rebuild, nix-build and nom-build
+41:48 While waiting for the build to finish, trying to again see why it didn't substitute before
+43:15 Running the VM and fixing the auto-login not working
+49:00 Trying to fix the small VM window size

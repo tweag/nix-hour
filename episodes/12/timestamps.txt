@@ -1,0 +1,19 @@
+00:00 Intro
+01:13 Purity of Nix overview
+02:16 Nix language evaluation purity
+04:36 Demonstrating evaluation impurities
+06:58 Repository is the flake evaluation input
+11:43 CLI is the --pure-eval input
+15:13 Derivation building purity
+18:28 Demonstrating building impurities
+21:12 Hacky way of forcing rebuilds every time
+24:11 Testing the sandbox and disabling it
+29:05 Only disabling the sandbox for specific derivations
+30:47 Build randomness
+31:59 Why building is not fully pure even with the sandbox
+34:34 Relation to reproducibility
+40:24 Relation to content-addressed derivations
+41:36 Build result runtime purity
+47:27 Nix code to improve runtime purity
+52:51 Runtime purity comes from Nix code, not Nix itself
+53:46 Purity level conclusion

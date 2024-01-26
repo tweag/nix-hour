@@ -1,0 +1,32 @@
+00:00 Intro, no Nix Hour for the next 2 weeks
+00:54 Q: what is the difference between using python.pkgs and python.withPackages
+01:51 nix-shell and python3Packages
+02:55 nix-shell and withPackages
+03:32 venv usage works with withPackages, but not with python3Packages
+04:39 Looking at PYTHONPATH with both variants
+06:15 makeBinaryWrapper
+09:58 difference between buildInputs and python.withPackages
+10:52 buildInputs can poison derivation environment with setup-hook
+12:19 python3.withPackages only provides one binary instead
+13:07 Recommend using buildPythonPackage when possible
+14:36 File sets: why, what and how.
+15:25 Current state of things: using ./. as src for derivation
+19:25 Comparing resulting derivations and their srcs
+22:22 Flakes don't have this particular issue, replicating that behavior with fetchGit
+25:27 Still not ideal: any change to git repo triggers rebuild
+26:19 Excluding files from the src with builtins.path
+31:58 Paths and strings in Nix are never equal
+32:51 Filtering out object files
+34:22 Filter always recurses into subdirectories
+27:47 Including only one subdirectory
+39:25 File sets overview
+41:15 Functions: union
+41:35 Functions: trace
+42:49 Functions: difference
+43:50 Functions: fileFilter
+45:06 Functions: intersect
+45:25 Nothing is imported into Nix store
+47:17 Functions: toSource
+49:22 Switching to file sets in our example, "unions" function
+56:00 File sets overview summary
+59:06 Outro, see you in 3 weeks

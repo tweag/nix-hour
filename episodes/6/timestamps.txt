@@ -1,0 +1,14 @@
+00:00 Finding a good package to demonstrate disallowedReferences
+04:00 Looking up historical build times and closure sizes on Hydra
+07:46 disallowedReferences and allowedReferences and related attributes in the manual
+10:16 Triggering the disallowedReferences error
+10:54 allowedReferences demo using nix-store --query
+16:00 "Accidentally" adding a C compiler to the result
+17:08 Querying the closure size with nix path-info -S
+19:33 nix why-depends
+24:10 nix why-depends with flake references
+26:21 Best practices around using allowedReferences and co.
+32:43 (meta) Future GitHub issue tracker for Nix Hour questions
+33:40 Forcefully preventing dependencies with removeReferencesTo
+37:15 Gracefully preventing dependencies by changing relevant Nix expressions
+45:40 How runtime dependencies in Nix work

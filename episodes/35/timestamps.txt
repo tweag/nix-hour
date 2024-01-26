@@ -1,0 +1,3 @@
+00:00 Intro
+00:30 Q: Generating niginx config for NixOS modules
+15:50 Q: Fighting infininite recursion during modules refactoring

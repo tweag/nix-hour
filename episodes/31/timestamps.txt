@@ -1,0 +1,33 @@
+00:00 Intro, why was nodejs v16 deprecated ahead of EOL
+01:26 NixOS release schedule
+03:03 How meta.knownVulnerabilities is handled in nixpkgs
+05:13 config.nix impurity in nixpkgs with and without flakes
+09:29 Last days of ZHF 23.05
+09:57 Hydra projects and jobsets
+11:49 What happens with failures after ZHF ends
+12:48 Looking at random broken package (clickhouse)
+15:28 Simpler package (cameradar)
+16:56 Using `nix edit` to find package source
+17:56 How packages are marked as broken after ZHF
+18:37 Details about ZHF
+19:29 https://malob.github.io/nix-review-tools-reports
+22:15 https://zh.fail
+23:17 A script to build all packages that you maintain
+24:19 Confirming breakage on master
+25:17 Checking if someone else posted a PR with a fix
+26:56 Discovering changes that affect package on Hydra
+28:14 We'll not cover git bisect here
+28:32 Getting into build directory
+30:42 Looking at the broken dependency
+31:29 Looking at the source of the package itself
+35:14 Dowgrading dependency if older one exists in nixpkgs
+36:40 Getting old version of dependency outside nixpkgs
+38:52 Finding nixpkgs commit containing old version of curl on Hydra
+40:12 Fetching old version of nixpkgs, using package from it
+42:19 Checking how long does it take to build a package on Hydra
+42:41 Testing the package, looking at what it supposed to do
+43:56 Marking the package as broken with comment
+45:19 Creating a PR to nixpkgs
+51:42 Q: Why doesn't fetching old nixpkgs work for upstream?
+53:16 Q: Can we make old curl available in nixpkgs?
+56:55 Out of time

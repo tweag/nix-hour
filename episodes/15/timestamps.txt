@@ -1,0 +1,20 @@
+00:00 Intro
+00:30 Question: Packaging multi-language packages (Go + Python here)
+04:14 Looking at an example in nixpkgs
+06:31 How builders are implemented underneath, can be reproduced independently
+13:05 Using fixed-output derivations to get network access for arbitrary derivations
+17:37 High-level conclusion for the question
+18:55 Recommendation: Lock fetches individually
+23:37 Brief mention of dream2nix
+25:39 What is stdenv and why does it need to be bootstrapped
+28:07 YouTube question: How to get auto-completion in ZSH 
+28:48 Looking at the stdenv entrypoint
+29:54 Bootstrap files definition
+32:56 How bootstrap files are built
+34:16 What the bootstrap files contain
+36:15 Trying to find the stdenv bootstrapping stages
+37:48 Rough overview of how stdenv bootstrapping stages work
+43:53 Looking at dependencies of the incremental stdenv bootstrapping stages
+46:16 Alternate and simpler bootstrapping project
+50:12 Remembering the now-removed nix/config.nix
+51:04 Bootstrapping Nix itself and conclusion

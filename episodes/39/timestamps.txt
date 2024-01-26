@@ -1,0 +1,19 @@
+00:00 Intro, new Nix hour time
+00:28 Q: How to get rid of channels on NixOS system
+02:19 Nix installation script internals
+06:46 Looking for NIX_PATH default value
+12:54 Removing NIX_PATH on NixOS
+18:12 Finding where ~/.nix-defexpr/channels in NIX_PATH comes from
+23:16 Disabling nix.channel.enable in NixOS configuration
+24:40 How nixPath default text is generated in manual
+30:52 When was nix.channel created
+33:06 https://nixpk.gs 
+33:52 Tracking down channel source by git-revision
+37:59 https://channels.nix.gsc.io (outdated)
+40:03 Nix channel status https://status.nixos.org
+41:39 Development branches in Hydra
+42:51 Hydra job sources
+45:44 Evaluation errors in Hydra
+46:21 Packages marked as broken after Zero Hydra Failure
+51:54 Nix registry
+58:04 Outro, next week Thu, 18:00 CEST

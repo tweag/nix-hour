@@ -1,0 +1,18 @@
+00:00 To adopt or not to adopt Nix Flakes in your company
+05:38 Default evaluation purity in Flakes
+10:31 Avoiding impurities in stable Nix
+16:12 Overriding the system in stable Nix
+17:43 Enabling pure evaluation without Flakes
+23:37 Overriding nixpkgs in Flakes
+24:46 Overriding nixpkgs in stable Nix
+28:44 Updating the pinned nixpkgs in Flakes
+29:53 Updating the pinned nixpkgs in Nix
+30:49 Using niv to manage sources
+35:17 Flakes manages inputs recursively
+36:51 Flakes has an output schema
+37:34 Discovering attributes in stable Nix
+40:32 niv doesn't manage sources recursively
+42:35 Using follows in Flakes to reproduce the failure
+43:31 Manually pinning the recursive nixpkgs with niv
+46:40 Problem with many nixpkgs versions in Flakes
+50:21 Recommendations for 2nix tooling

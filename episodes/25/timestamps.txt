@@ -1,0 +1,22 @@
+00:00 Intro, question from the audience: Why don't we make NixOS look like a normal distro
+02:35 NixOS environment is similar to Nix build sandbox
+05:01 Creating /bin symlinks with NixOS activation scripts
+12:06 How do other system deal with this issue, why did NixOS do it this way
+15:11 Testing activation script in VM
+15:53 Issue with ordering pakcages with same binary names
+17:34 How are binary name conflicts resolved in NixOS. systemPackages source.
+18:50 Exploring buildEnv to construct binary symlinks
+22:20 NixOS system's path derivation
+24:23 Detecting and resolving collision between binaries with same name. hiPrio and lowPrio.
+27:04 Keeping both binaries in path
+29:11 Changing gcc10 binary name using overrideAttrs
+32:10 Using internal options in NixOS module system to expose intermediate results.
+35:17 Changing derivation output using a wrapper derivation. symlinkJoin
+39:13 Propagating attributes of the original derivation to the wrapper
+40:28 Inspecting NixOS configuration in nix repl
+41:35 https://nixos.wiki/wiki/Nix_Cookbook#Wrapping_packages
+42:19 Creating an overlay in nixpkgs.overlay option
+44:52 Symlinking /bin doesn't mean the package is properly installed
+46:54 Comparing symlinkJoin and buildEnv
+48:13 Creating a separate package to override symlinks
+52:18 /usr/bin/env exists on NixOS, but not in Nix build sandbox

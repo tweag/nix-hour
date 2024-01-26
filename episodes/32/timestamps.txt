@@ -1,0 +1,24 @@
+00:00 Intro
+00:47 Q: How to extend nixpkgs.lib or builtins
+01:28 Simple example, adding new fetcher to nixpkgs lib
+02:26 lib.extend: overlay system for lib
+03:14 Aside: evaluating function with all default args from cli
+03:54 Why we can't use //, injecting new lib into NixOS module
+06:49 Extending builtins by redefining the name builtins
+08:32 builtins.scopedImport
+10:38 Dangers and usecases of scopedImport
+13:33 Adding builtins using Nix plugins
+16:25 Adding custom fetcher with nixpkgs overlays, pkgs.extend, pkgs.appendOverlays
+17:58 When use self and super or final and prev in overlays
+19:34 Self-refferential packages using makeOverridable
+22:16 Recursion using overrides
+24:53 Overriding self-refferential derivation, why use super only on top level of the overlay
+27:43 Looking for Nix plugins
+29:53 Trying Nix plugin from nix-doc project
+32:54 Overriding nix as a dependency for a plugin
+37:20 aside: Evaluating NixOS config
+40:50 Debugging dependency override
+49:27 Using user's nix.conf
+53:20 Exposing a value from inside NixOS module system
+56:10 Testing final nix-doc configuration
+58:55 Out of time

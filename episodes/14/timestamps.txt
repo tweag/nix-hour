@@ -1,0 +1,25 @@
+00:00 Intro
+01:23 Looking at a @r-ryantm nixpkgs-update PR
+04:38 Looking at nixpkgs-review
+07:20 Listing packages with nix-env
+13:22 Listing a nested package set with nix-env using recurseIntoAttrs
+14:22 Future me: It's because pythonPackages.requests fails to evaluate
+14:55 Package sets in nixpkgs being built by Hydra
+16:22 Back to nixpkgs-review
+18:00 Why the nixpkgs-review shell has a special case for more than 50 packages
+20:40 How buildEnv works around the argument length restriction
+22:36 Brief look at nixpkgs-update docs
+23:20 Looking at Repology 
+25:20 Back to nixpkgs-update docs
+25:57 Why nixpkg staging exists
+28:40 Mistake: I also stashed away the setup.sh script, these are only paths that are fetched
+29:00 Rebuild count labels in nixpkgs
+31:29 Back to nixpkgs-update docs
+31:58 Looking and running updateScript's
+36:05 Functions and tooling to for defining updateScript's
+39:30 Recommendation: Don't generate Nix, instead generate JSON and import that from Nix
+40:34 nixpkgs-update vs nix-update
+41:59 Updating multiple hashes using update scripts? cargoSha256?
+46:50 Hacky replacement of hashes in Nix source
+49:23 passthru.tests in CI and the documentation
+52:07 testers.testVersion and other testers.*

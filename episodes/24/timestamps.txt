@@ -1,0 +1,15 @@
+00:00 Intro, issues overview
+00:36 Secrets management
+01:26 Writing simple NixOS service
+03:48 Writing NixOS test
+08:55 Extracting NixOS configuration from test
+12:44 Adding password to service naively
+20:53 Providing password via file
+25:28 LoadCredential documentation
+26:19 Adding secret file outside Nix store
+32:26 Running service as a separate user
+41:27 Interactive debugging of NixOS test
+46:42 Using systemd-run to test systemd unit parameters
+57:10 Fixing NixOS test
+1:00:59 Time is out, signoff
+1:01:20 Afterparty: figuring out the issue

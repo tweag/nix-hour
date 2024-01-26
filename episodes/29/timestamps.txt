@@ -1,0 +1,28 @@
+0:00:00 Intro
+0:00:12 Question: how to package Python library in flake
+0:02:09 Adding Python library in nixpkgs
+0:02:36 Adding Python library in an overlay
+0:04:08 Using pythonPackageExtensions in an overlay
+0:10:35 Handing off to Yuriy
+0:11:15 Intro to home-manager on Ubuntu
+0:12:57 Editing Nix without editor support is hard
+0:14:46 Installing neovim
+0:16:50 Looking at Nix LSP servers
+0:18:15 Installing nvim-lspconfig
+0:23:24 Updating neovim on Ubuntu
+0:25:22 Questions from the chat
+0:25:50 nvim-lspconfig configures highlighting
+0:26:01 Looking for ways to install rnix-lsp
+0:26:47 Taking stock of all package manager that we're using
+0:28:00 Difficulties with Ubuntu repositories on ARM
+0:28:42 Installing nix
+0:30:52 Installing cargo
+0:32:35 Installing rnix-lsp
+0:35:30 Demonstrating rnix-lsp
+0:38:24 Suming it up and why we should use home-manager
+0:39:36 Introduction to home-manager
+0:45:05 Installing and configuring neovim with home-manager
+0:48:00 Installing nvim-lspconfig with home-manager
+0:52:25 How home-manager places files in ~
+0:55:05 Installing rnix-lsp with home-manager
+0:58:08 Configuring git with home-manager

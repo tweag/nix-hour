@@ -1,0 +1,21 @@
+00:00 Intro
+01:11 Q: Debugging derivations with Nix trace
+02:32 Simplest NixOS module scaffolding
+03:45 Aside: Catch-all NixOS types (raw, anything)
+06:27 Getting a confusing error from NixOS module system
+10:54 Difference from Nix 2.3
+12:41 Adding information to the trace with builtins.addErrorContext
+14:45 Looking at PR#8623: Stack trace improvements
+https://github.com/NixOS/nix/pull/8623
+18:42 Back to NixOS modules example
+19:33 lib.types.string is deprecated in favor of str
+25:05 Providing overridable defaults for NixOS options
+32:17 Pattern for overridable settings
+34:02 Injecting pkgs argument into module system without NixOS
+35:15 Strict evaluation and derivations
+36:14 nix-instantiate traverses attribute sets
+37:15 Creating options for values derived from other options
+41:00 Q: How to use pasthru.tests outside nixpkgs?
+50:50 Q: Changing dbeaver version in nixpkgs
+52:39 Issue with passing arrays to builder as arguments, pkgs.lib.escapeShellArgs
+57:37 Outro
