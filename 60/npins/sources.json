@@ -1,0 +1,17 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "tweag",
+        "repo": "nixpkgs"
+      },
+      "branch": "emacs-latest",
+      "revision": "fe18dcfc53e7fbd7ce9249b95633c2702989d8ba",
+      "url": "https://github.com/tweag/nixpkgs/archive/fe18dcfc53e7fbd7ce9249b95633c2702989d8ba.tar.gz",
+      "hash": "1awf62cx7sibzahiaqqmp6y303gz04gz4a1niq6pma1vnn2si90x"
+    }
+  },
+  "version": 3
+}
