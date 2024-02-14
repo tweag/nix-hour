@@ -1,0 +1,17 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "tweag",
+        "repo": "nixpkgs"
+      },
+      "branch": "systemd-notify-reload",
+      "revision": "1cd71881f26f6b52b921933a4f09ffdf68db0716",
+      "url": "https://github.com/tweag/nixpkgs/archive/1cd71881f26f6b52b921933a4f09ffdf68db0716.tar.gz",
+      "hash": "0ii8vn2lhfrpadxhkivg3flf1yk5m2y86rdjpzyvn8a8dl58g404"
+    }
+  },
+  "version": 3
+}

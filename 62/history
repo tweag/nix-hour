@@ -1,0 +1,178 @@
+cd /etc/nixos
+l
+vim configuration.nix
+vim module.nix
+vim configuration.nix
+vim demo.nix
+vm-switch
+vm-switch
+vm-switch
+systemctl status test-foo
+vm-switch
+systemctl status test-foo
+systemctl status test-foo
+vm-switch
+systemctl status test-foo
+systemctl status test-bar
+man configuration.nix
+vm-switch
+man configuration.nix
+vm-switch
+vm-switch
+vm-switch
+vm-switch
+man configuration.nix
+cd /etc/nixpkgs
+cd pkgs/build-support/trivial-builders
+vim default.nix
+cd
+vm-switch
+cd /run/current-system/sw
+l -laa
+tree
+nix-shell -p tree
+systemctl --all
+journalctl -u colord.service -e
+cd /etc/nixos
+l
+vim configuration.nix
+vim root
+vim configuration.nix
+vim demo.nix
+vm-switch
+systemctl status myService.service
+systemctl start myService.service
+sudo systemctl start myService.service
+systemctl start myService.service
+systemctl status myService.service
+journalctl -u myService.service -e
+systemctl stop myService.service
+sudo systemctl stop myService.service
+journalctl -u myService.service -e
+man systemd.exec
+man systemd.directives
+man systemd.service
+man systemd.directives
+man systemd.kill
+vim /run/current-system/activate
+vim $(nixos-rebuild)
+which nixos-rebuild
+cat /run/current-system/sw/bin/nixos-rebuild
+nvim $(which nixos-rebuild)
+vim /run/current-system/bin/switch-to-configuration
+vm-switch
+cat /etc/systemd/system/wireplumber.service
+cat /etc/systemd/system/wireplumber@.service
+cat /etc/systemd/system/myService.service
+cat /etc/systemd/system/multi-user.target
+cat /etc/systemd/system/polkit.service.d/overrides.conf
+man configuration.nix
+cat /etc/systemd/system/multi-user.target.wants/alsa-store.service
+ls -la /etc/systemd/system/multi-user.target.wants
+vim configuration.nix
+vim demo.nix
+vm-switch
+vim /run/current-system/bin/switch-to-configuration
+journalctl -u myService.service -e
+man configuration.nix
+vm-switch
+vim configuration.nix
+l
+vim personal.nix
+vim module.nix
+rm module.nix
+rg module.nix
+grep modu
+grep module.nix
+grep module.nix -v
+grep module.nix -r
+vim vm/demo.nix
+l
+t vm
+tree vm
+ls -laa vm
+l
+vim default.nix
+vm-switch
+vim configuration.nix
+vim demo.nix
+vim demo.nix
+vim demo.nix
+vm-switch
+man configuration.nix
+journalctl -u myService.service -e
+vm-switch
+journalctl -u myService.service -f
+vm-switch
+journalctl -u myService.service -f
+systemctl cat myService.service
+cat /nix/store/w55gxvb7zhlj85a8nccza1nx7k9865nz-unit-script-myService-start/bin/myService-start
+/nix/store/w55gxvb7zhlj85a8nccza1nx7k9865nz-unit-script-myService-start/bin/myService-start
+bash -x /nix/store/w55gxvb7zhlj85a8nccza1nx7k9865nz-unit-script-myService-start/bin/myService-start
+vm-switch
+/nix/store/w55gxvb7zhlj85a8nccza1nx7k9865nz-unit-script-myService-start/bin/myService-start
+/nix/store/w55gxvb7zhlj85a8nccza1nx7k9865nz-unit-script-myService-start/bin/myService-start -x
+journalctl -u myService.service -f
+vm-switch
+man configuration.nix
+man configuration.nix
+vm-switch
+man systemd.service
+man systemd.service
+man systemd-notify
+man configuration.nix
+vm-switch
+man sd-not
+man sd-notify
+nix-shell -p man-pages
+man systemd.service
+man systemd.service
+vm-switch
+journalctl -u myService.service -e
+vm-switch
+journalctl -u myService.service -f
+systemctl restart myService.service
+sudo systemctl restart myService.service
+systemctl cat myService.service
+vm-switch
+journalctl -u myService.service -f
+vm-switch
+vm-switch
+journalctl -u myService.service -f
+vm-switch
+vm-switch
+man systemd.service
+vim configuration.nix
+vim default.nix
+cd /etc/nixos
+vim configuration.nix
+journalctl -u myService.service -f
+vim configuration.nix
+vim demo.nix
+journalctl -u myService.service -f
+vm-switch
+vm-switch
+cd /etc/nixos/conf
+cd /etc/nixos/
+vim demo.nix
+vim default.nix
+vm-switch
+l
+vim demo.nix
+vm-switch
+journalctl -u myService.service -f
+systemctl cat myService.service
+vim demo.nix
+vm-switch
+vm-switch
+systemd-notify --help
+systemctl stop myService.service
+sudo systemctl stop myService.service
+vm-switch
+journalctl -u myService.service -f
+vm-switch
+vm-switch
+vm-switch
+man systemd.service
+vm-switch
+vm-switch
