@@ -1,1 +1,1 @@
-See ../templates/vm/README.md
+See [templates/vm](../templates/vm/README.md)
