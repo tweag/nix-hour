@@ -1,0 +1,120 @@
+man bash
+hello
+man zsh
+man zshall
+man bash
+echo $SHELL
+echo $0
+man zshall
+command_not_found_handler() {\
+  echo "The command $0 does not exist"\
+}
+hello
+cd /etc/nixos
+man configuration.nix
+vim configuration.nix
+vim module.nix
+vm-switch
+nixos-rebuild repl
+nix repl '<nixpkgs/nixos>'
+vim default.nix
+nix repl .
+stat /nix/var/nix/profiles/per-user/root/channels/nixos/programs.sqlite
+hello
+hello
+npins --help
+nix-shell
+stat /nix/store/cj8357p9wssb9s76ipyl5z85pq9xrzfj-source/programs.sqlite
+nix-shell -p sqlite3
+nix-shell -p sqlite
+hello
+hello
+NIX_AUTO_RUN=1 hello
+cd /etc/nixpkgs
+rg command-not-found
+cd nixos/modules/programs
+cd command-not-found
+vim command-not-found.pl
+cd
+fish
+sl
+foo
+bar
+NIX_AUTO_RUN=1 bar
+cd /etc/nixos
+vim module.nix
+man configuration.nix
+nix repl
+vim module.nix
+vm-switch
+vim module.nix
+nix repl .
+vim mood
+vim module.nix
+vm-st
+vm-switch
+hello
+whoami
+nix-shell
+vm-switch
+vm-switch
+vm-switch
+vm-switch
+vm-switch
+hello
+echo $NIX_AUTO_RUN
+export NIX_AUTO_RUN=1
+hello
+bar
+echo $NIX_AUTO_RUN
+bar
+nix repl '<nixpkgs>'
+nix-locate --help
+man nix-index
+nix-locate X11.h
+nix-locate --help
+nix-locate --top-level X11.h
+nix-locate --help
+nix-locate --top-level X11.h --minimal
+nix-locate --top-level X11.h
+nix-locate --top-level X11.h --whole-name
+nix-locate X11.h --whole-name
+nix-locate X11.h
+nix-locate libX11
+nix-locate lib/libX11.
+nix-locate --root /lib/libX11
+nix-locate --help
+nix-locate --at-root /lib/libX11
+nix-locate --at-root /lib/libX11 -w
+nix-locate --at-root /lib/libX11.so -w
+nix-locate --at-root /lib/libX11.so -w --top-level
+nix-locate '/share/man/man[0-9]'
+nix-locate --regex '/share/man/man[0-9]'
+nix-locate --regex '/share/man/man[0-9]/jq'
+nix-index --help
+nix-locate --help
+type command-not-found
+type command_not_found_handle
+which nix-locate
+which nix-index
+cd /etc/nixos
+vim module.nix
+vm-switch
+echo $PATH
+, cowsay hello
+, cowsay hello | , neocat
+cowsay hello
+, cowsay hello | , bat
+, cowsay hello | , fzf
+, cowsay hello | , lolcat
+vim module.nix
+npins --help
+npins add github --help
+, npins add github --help
+npins add github nix-community nix-index-database
+vim module.nix
+l
+vim history
+vim configuration.nix
+l
+vim personal.nix
