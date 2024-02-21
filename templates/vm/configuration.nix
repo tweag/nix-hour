@@ -77,6 +77,13 @@
     enable = true;
     defaultEditor = true;
     vimAlias = true;
+    configure = {
+      customRC = ''
+        set shiftwidth=2
+        set tabstop=2
+        set expandtab
+      '';
+    };
   };
 
   programs.git.enable = true;
