@@ -1,0 +1,60 @@
+cat /etc/passwd
+cat /etc/passwd
+cd /etc/nixos
+vim module.nix
+vim configuration.nix
+vim module.nix
+nproc
+vim module.nix
+vm-switch
+cat /var/lib/nixos/uid-map
+vim my-package.nix
+vim default.nix
+nix-build -A myPackage
+vim module.nix
+vm-switch
+cat /etc/passwd
+vim my-package.nix
+nix-build -A myPackage
+vim module.nix
+vim my-package.nix
+vm-switch
+vim ~/.config/nix/nix.conf
+mkdir ~/.config/nix
+vim ~/.config/nix/nix.conf
+vm-switch
+rm ~/.config/nix
+rm ~/.config/nix -r
+vm-switch
+cat $(which vm-switch)
+vm-switch --extra-experimental-features auto-allocate-uids
+l /nix/var/nix/profiles
+l /nix/var/nix/profiles/per-user
+mkdir ~/.config/nix
+vim ~/.config/nix/nix.conf
+vm-switch --extra-experimental-features auto-allocate-uids
+vm-switch
+vim ~/.config/nix/nix.conf
+vm-switch
+rm ~/.config/nix
+rm ~/.config/nix -r
+nix-build -A myPackage
+vim my-package.nix
+nix-build -A myPackage
+nix-shell -p nix-top --run nix-top
+htop
+nix-shell -p btop
+nix-shell -p htop
+vim module.nix
+cd ..
+cd nixpkgs
+nix-shell -p ripgrep
+cd /etc/nixos
+direnv allow
+npins show
+npins update
+vim default.nix
+vm-switch
+nix repl .
+nix repl .
+vim impure-env.nix
