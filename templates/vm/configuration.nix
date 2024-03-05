@@ -66,6 +66,8 @@
     setOptions = [ "INC_APPEND_HISTORY" ];
   };
 
+  programs.direnv.enable = true;
+
   # Prevent the new user dialog in zsh
   system.userActivationScripts.zshrc = "touch .zshrc";
 
@@ -88,9 +90,10 @@
 
   programs.git.enable = true;
 
-  environment.defaultPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     firefox
     vm-switch
+    ripgrep
   ];
 
   # xserver, but actually really wayland
