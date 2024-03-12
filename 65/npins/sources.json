@@ -1,0 +1,11 @@
+{
+  "pins": {
+    "nixpkgs": {
+      "type": "Channel",
+      "name": "nixos-unstable",
+      "url": "https://releases.nixos.org/nixos/unstable/nixos-24.05pre594677.3030f185ba6a/nixexprs.tar.xz",
+      "hash": "0flsrsqbmkr9x9gsrvsdj4vlf6gfn373ik8rrwb5yfcd9ipjz1zv"
+    }
+  },
+  "version": 3
+}

@@ -1,0 +1,9 @@
+- Evaluation
+  Input: Nix files
+  Output: Derivations (`.drv`)
+  Command: `nix-instantiate`
+  Cache: Only on the Flake-level
+- Realisation
+  Input: Derivations
+  Output: Output store path (../bin/hello)
+  Command: `nix-store --realise`
