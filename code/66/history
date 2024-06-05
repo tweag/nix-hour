@@ -1,0 +1,100 @@
+cd /etc/nixpkgs
+cd nixos/modules
+grep ccache
+rg ccache
+vim programs/ccache.nix
+vim /etc/nixos/configuration.nix
+cd /etc/nixos
+vim default.nix
+vim configuration.nix
+vim module.nix
+vim /etc/nixpkgs/nixos/modules/programs/ccache.nix
+vm-switch
+cd
+vim /etc/nixos/module.nix
+vm-switch
+cd /etc/nixos
+nix-build '<nixpkgs>' -A hello.src
+nix-shell -p atool
+vm-switch
+cd /etc/nixos
+nix-build -A vm.system -K
+cd /tmp/nix-build-hello-2.12.1.drv-0
+l
+cd hello-2.12.1
+cat config.log
+vim config.log
+nvim config.log
+cd
+vim /etc/nixos
+vim /etc/nixos/module.nix
+nix show-config | rg sandbox
+nix show-config --extra-experimental-features nix-command | rg sandbox
+cd /etc/nixos
+nix repl -f .
+vim module.nix
+nix repl -f .
+vim module.nix
+vm-switch
+nix repl -f .
+cat /etc/nix/nix.conf
+vim module.nix
+vm-switch
+cat /etc/nix/nix.conf
+vim module.nix
+vm-switch
+cat /etc/nix/nix.conf
+nix-build -A vm.system -K
+cd /tmp/nix-build-hello-2.12.1.drv-1
+cd hello-2.12.1/l
+ls
+cd hello-2.12.1
+ls
+cat configure
+vim configure
+vim module.nix
+vm-switch
+nix show-config | rg sandbox
+nix show-config --extra-experimental-features nix-command | rg sandbox
+vim module.nix
+vm-switch
+vim module.nix
+vm-switch
+vim module.nix
+vm-switch
+vim module.nix
+l
+mv hello-2.12.1 hello
+rm source.tar.gz
+vim default.nix
+vim module.nix
+vm-switch
+vim module.nix
+nix-build '<nixpkgs>' -A hello
+nix-shell -p moreutils
+ 2>&1 | ts -s '%.T'\
+
+ccache -d /var/cache/ccache -s
+nix-ccache --help
+nix-ccache -s
+cd hello
+rg 'world'
+cd src
+rg 'world'
+vim hello.c
+cd ..
+cd tests
+rg world
+vim traditional-1
+vim hello-1
+cd ..
+cd ..
+vim module.nix
+vm-switch
+hello
+nix-ccache --show-stats
+watch date
+watch --help
+watch -d date
+nix show-config | rg sandbox
+nix show-config --extra-experimental-features nix-command | rg sandbox
