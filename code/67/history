@@ -1,0 +1,50 @@
+cd /etc/nixos
+mkdir prj
+cd prj
+cargo init
+nix-shell -p cargo
+nix-shell -p cargo npins
+vim default.nix
+echo 'use nix' > .envrc
+direnv allow
+vim default.nix
+vim package.nix
+vim default.nix
+vim package.nix
+vim default.nix
+vim package.nix
+cp package.nix package2.nix
+vim package2.nix
+vim default.nix
+rm package2.nix
+vim package.nix
+vim default.nix
+vim default.nix
+vim shell.nix
+vim package.nix
+nix-build -A build
+cd npins
+nix-build -A build
+cd ..
+l
+l
+vim default.nix
+npins show
+nix-build -A build
+vim src/main.rs
+vim default.nix
+rust-analyzer --help
+which vim
+realpath $(which vim)
+l
+cd prj
+mvim
+vim
+vim src/main.rs
+vim
+vim src/main.rs
+nix-build '<nixpkgs>' -A firefox
+l
+nix-build '<nixpkgs>' -A firefox-unwrapped --check
+stress
+nix-shell -p stress
