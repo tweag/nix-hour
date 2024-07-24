@@ -1,0 +1,12 @@
+diff --git a/pkgs/applications/virtualization/virtualbox/guest-additions-iso/default.nix b/pkgs/applications/virtualization/virtualbox/guest-additions-iso/default.nix
+index 9529c980475d..e727a53d5695 100644
+--- a/pkgs/applications/virtualization/virtualbox/guest-additions-iso/default.nix
++++ b/pkgs/applications/virtualization/virtualbox/guest-additions-iso/default.nix
+@@ -4,6 +4,7 @@ let
+   inherit (virtualbox) version;
+ in
+ fetchurl {
++  name = "VBoxGuestAdditions_${version}.iso-modified";
+   url = "http://download.virtualbox.org/virtualbox/${version}/VBoxGuestAdditions_${version}.iso";
+   sha256 = "4469bab0f59c62312b0a1b67dcf9c07a8a971afad339fa2c3eb80e209e099ef9";
+   meta = {
