@@ -1,0 +1,24 @@
+00:00 Overriding the source of a Rust package in an overlay
+05:50 Impure overlay locations
+06:49 Not providing a hash to different fetchers
+11:53 Providing the overlay on the CLI instead of impurely
+13:44 Discussion about derivation names
+15:02 Looking how buildRustPackage is implemented and figuring out how to override the dependency hash
+19:30 Actually overriding the dependency hash
+21:18 Discussion on whether the name matters for fixed-output derivation caching
+23:02 Looking at the Nix store database directly with sqlite
+23:59 Checking discourse for how to override rust packages dependency hashes
+25:05 Why outputHash?
+28:34 Asking for questionsA
+30:15 Inspecting derivation attributes
+33:16 The derivation primitive
+36:37 The derivationStrict primitive underneath the derivation primitive
+38:18 Nix repl requirements for a derivation
+39:52 Why derivation attributes aren't needed to build derivations
+44:10 Derivation inputs
+45:20 Inspecting build-time dependencies of derivations
+47:07 Finding the derivation for a store path using nix-store --query --deriver
+49:20 Subpar explanation of some GC related nix.conf options
+52:12 Manually replicating Nix's grepping for runtime dependencies
+55:38 Looking at references schema in the Nix database
+56:02 Looking at the GC related options again and some recommendations

@@ -1,0 +1,27 @@
+00:00 Intro
+00:26 Question: How to override the source of a package
+01:47 Difference between .override and .overrideAttrs
+04:26 Updating derivation attributes
+06:02 "or" operator precedence confusion
+06:38 Back to overriding the source
+07:18 Replacing "rec"s in mkDerivation with a function
+10:15 Overriding the hash of a source
+11:56 Demonstrating mkDerivation with a function
+13:03 Trying to override the hash of a fetcher derivation directly
+15:32 Nulling the hash to force a refetch
+16:46 Trying to figure out why overriding the hash didn't work
+18:51 Figuring it out: "sha256" is not a derivation attribute
+20:45 We can't use override either
+21:59 Overriding "outputHash" using "overrideAttrs"
+22:47 Clarification about difference between similar problems
+24:51 How overriding sha256 with overrideAttrs could work more nicely
+26:58 Conclusion about source overriding
+28:50 SRI hashes and the "hash" fetcher argument
+31:09 "flat" file hashes
+34:04 "recursive" NAR hashes
+39:38 Conclusion "flat" vs "recursive" hashing
+40:43 Why fetchFromGitHub uses "recursive" hashing
+43:14 What changes is the NAR archive format sensitive to?
+45:42 Sharing derivations using nix-store --export and --import and some other useful flags
+52:40 Deleting store paths, nix-store --roots and garbage collection
+54:41 Outro

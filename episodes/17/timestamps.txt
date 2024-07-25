@@ -1,0 +1,32 @@
+00:00 Intro
+00:48 What's new in Nix YouTube series
+02:12 Nixpkgs news: pkgConfigModules
+04:02 A brief look at multiple outputs
+05:44 Back to pkgConfigModules
+06:56 What is pkg-config
+09:12 Trying to find the defaultPkgConfigPackages JSON
+10:38 Default packages for pkg-config names
+11:31 pkg-config testers
+14:55 Use-cases for the pkg-config default package listing
+15:28 Could this tester be added to every derivation?
+16:37 It's hard to find significant changes in Nixpkgs
+17:11 Benefits of multiple outputs
+19:55 Trying to filter package update PR's using labels
+21:50 Browser crash, please wait
+22:53 lib.path.append
+26:51 lib.path.subpath
+28:18 Further motivation for path functions
+29:08 Looking at lib.replicate and lib.concatLines
+30:11 Emails are now optional in the Nixpkgs maintainer listing
+31:27 lib.updateManyAttrsByPath
+35:30 Interlude
+36:34 Unpack phase and default phases
+41:04 Why you maybe shouldn't override the default phases
+43:24 About emails being optional: People can't be reached privately anymore
+44:48 Appending to hooks
+47:37 Default actions of phases
+48:37 Why multiple phases are needed
+50:33 Use cases for additional phases inbetween standard ones
+53:01 Do all phases run in the same sandbox?
+53:39 Are there different limitations to different phases?
+54:47 Fetching from the internet during phases?

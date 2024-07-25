@@ -1,0 +1,11 @@
+00:00 Updating a single flake input and conventions around updating flake.lock
+05:39 nix edit and how it works
+12:54 Creating a simple package in nixpkgs
+19:58 Using nix edit on the new package and trying to cause a bug
+23:42 Quirks with paths in Nix
+28:40 Reading files and directories in Nix
+30:35 Serializers and deserializers in Nix
+39:33 Whether auto-importing is a good thing
+41:20 File access restrictions in Flakes
+42:44 builtins.storePath
+46:18 About string context, how to view and manipulate it

@@ -1,0 +1,34 @@
+0:00 Initial look at PR 186314
+2:35 Markdown documentation in NixOS options
+3:05 Systemd unit types and index manpage
+4:14 Another look at the PR
+6:04 Pattern for handling enumerations
+8:03 lib.partition for splitting a list of values into two
+10:05 lib.groupBy for splitting a list of values into more subsets
+12:30 Following lib.groupBy with a lib.mapAttrs
+13:22 Trying to figure out the evaluation error without reading the error message
+14:53 Adding tracing using lib.debug.traceSeq
+16:49 nix-instantiate flags relating to lazy/strict evaluation
+17:56 Realizing the problem, missing --strict with --json
+18:20 nix eval strictness
+19:09 Setup to demonstrate problem with nix eval strictness compared to nix-instantiate
+20:24 nix repl derivation output
+22:00 Demonstrating problem with nix eval strictness compared to nix-instantiate
+24:12 Using the GitHub CLI to check out PR 186314
+25:13 Trying to do a "quick" refactoring using lib.groupBy and the enum handling pattern from earlier
+32:27 How to find documentation for nixpkgs library functions
+33:49 Except for Nix builtin functions re-exported from the nixpkgs library
+34:38 How to find documentation for Nix builtin functions
+35:16 nix repl :doc command for Nix builtin function docs
+35:51 Starting a failed attempt at trying to add documentation to re-exported builtin functions
+36:56 Trying out the Nix debugger
+38:55 Working around a problem in the Nix debugger relating to builtins.tryEval
+40:11 Inspecting variables in the error
+40:32 Changing to another trace in the stack
+41:45 Resuming the failed attempt at trying to add documentation for re-exported builtin functions
+43:02 Trying to use the doc Makefile for more incremental builds
+46:59 Looking closer at lib.debug
+50:45 Trying out lib.generators.toPretty
+51:40 Looking at builtins.seq and builtins.deepSeq
+53:53 Looking at the implementation of builtins.seq
+55:26 The strictness of attribute keys and list sizes

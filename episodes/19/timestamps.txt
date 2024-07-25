@@ -1,0 +1,16 @@
+00:00 Intro
+01:57 From a single fixed-point function to multiple functions
+07:59 How the two config's differ
+11:55 Why the config fixed-point works at all
+13:07 How a simple type merge is implemented
+18:22 Implementing a simple merge operation
+21:16 Calling the merge operation for each attribute
+25:54 Steps towards a complete module system
+28:21 Infinite recursion from imports using config
+34:15 How mkIf avoids infinite recursion
+40:03 The options attribute
+42:19 Using imports or mkMerge to define an option multiple times
+45:00 Infinite recursion from mkMerge
+47:51 Using addErrorContext to add error context
+50:29 Workaround for infinite recursion from mkMerge
+54:39 Outro

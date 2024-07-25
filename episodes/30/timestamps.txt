@@ -1,0 +1,24 @@
+00:00 Intro
+01:35 Question: Integrating Nix with ecosystems like Rust, NPM
+03:35 Aside: what is nix-community organisation
+06:11 Tools for packaging Python
+07:12 Overview of dream2nix
+08:10 Q: What companies develop and use these tools?
+09:28 Checking out poetry2nix
+12:09 Aside: list element access in Nix repl vs CLI
+13:49 Back to poetry2nix, fetching dependencies by hash with Nix
+16:48 Separating Python dependencies by Python version and system
+17:50 Comparing poetry.lock to requirements.txt
+19:06 Package hashes from Hackage ecosystem in Nix, all-cabal-hashes and callHackage
+22:56 Q: What software architectures does Nix support?
+24:45 Impure software packaged with Nix
+27:47 CI/CD, https://floxdev.com, https://cachix.org, https://hercules-ci.com
+29:35 Using Nix in GitHub Actions, cachix/install-nix-action, cachix/cachix-action
+30:41 Using Nix in CI for impure builds or software, transitioning to pure Nix
+36:30 Comment about lack of standardization of approaches and solutions
+36:54 Impurities in packaging without flakes
+45:09 Adding custom attributes to default derivation
+47:20 How to do the same with flakes
+53:43 Why does nixpkgs use legacyPackages instead of packages
+57:06 flake-utils
+59:45 Out of time

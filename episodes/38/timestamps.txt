@@ -1,0 +1,16 @@
+00:00 Intro, vote for new Nix Hour time
+00:58 Q: What does 2023 Nix cache?
+02:35 Thunk evaluation is cached in memory
+10:56 File import in-memory cache
+14:03 Leveraging evaluation cache with let-in
+17:32 Leveraging file import cache
+19:40 On-disk evaluation cache for flakes
+28:46 Rules for recursing into attrsets in nixpkgs
+32:44 How is pkgs.pkgs populated
+36:52 Debugging evaluation performance with NIX_SHOW_STATS
+44:51 NIX_COUNT_CALLS and trace-function-calls
+50:12 How it works with nixpkgs
+52:34 Using hyperfine for benchmarking
+52:48 Manual benchmarking using sta for reports
+54:41 ofborg evaluation performance report for PRs
+59:31 Outro, don't forget to vote for new time

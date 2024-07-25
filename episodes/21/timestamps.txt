@@ -1,0 +1,21 @@
+00:00 Intro, new weekly time
+01:08 Q: nixpkgs PR with master merged into PR
+03:24 Trying to remove merge commits with rebase
+08:20 Cherry picking commits manually
+10:37 Pushing changes
+11:53 x10an14's solution for rebase
+15:32 Q: do you still use nixus?
+16:21 nixus configuration demonstration
+19:11 nixus: custom modules
+20:14 nixus: SSH
+21:33 Q: nixus and flakes
+33:38 Track down warning about replaceChars
+36:57 Issues in nix-hour repository
+37:43 Q: How to depend on kerberos in nixpkgs
+39:06 Aliases in nixpkgs
+40:38 Nix-implementation of attribute typo suggestions
+44:32 callPackage implementation of the same
+45:48 Q: How to know where and which files to install
+47:44 postgresqlTestHook
+53:55 Q: nixpkgs PR summary and description information
+57:40 Signoff

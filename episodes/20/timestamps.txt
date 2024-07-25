@@ -1,0 +1,20 @@
+00:00 Intro and poll for a new time
+01:28 NixOS test declarations in Nixpkgs
+05:38 Basic structure of NixOS tests
+06:45 The testScript and its API
+09:39 Running the tests in Nixpkgs
+10:58 Building the interactive test driver
+11:55 Question: Do the tests use the host's Nix store?
+13:47 Running tests interactively and networking between nodes
+16:23 Creating our own basic NixOS test
+24:11 Looking at some other available options, including extraPythonPackages
+25:18 Logging into the machine interactively
+29:00 Changing the keyboard layout of the machine
+30:55 Taking a screenshot interactively, needs to be an absolute path
+36:45 Taking a screenshot non-interactively, also needs to be an absolute path for some reason
+45:44 system-features, requiredSystemFeatures and kvm being required for NixOS tests
+48:41 Remote builder system-features specification
+50:08 Question: Can custom system features be declared?
+51:47 Temporarily changing a static etc file hackily
+53:11 Setting a custom feature in nix.conf
+54:16 Undoing the temporary file change

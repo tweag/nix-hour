@@ -1,0 +1,19 @@
+00:00 Intro
+00:24 RFC 140: Simple Package Paths
+01:27 Adding package in a new structure
+04:12 Comparing to the current all-packages.nix approach
+08:15 Error handling for pkgs/by-name
+10:45 Access to files from other packages is blocked
+23:38 How find package source file through meta.
+30:51 Defining derivation environment variables using env attr.
+35:29 Upcoming __cleanAttrs feature
+42:21 overriteAttrs with env attribute
+45:53 RFC 140 implementation: how shards are merged together
+49:19 aside: Different fold functions in Nix and nixpkgs.lib
+52:05 Back to RFC 140: merging big attrsets, mergeAttrsList
+59:06 Outro
+
+RFC 140: https://github.com/NixOS/rfcs/blob/master/rfcs/0140-simple-package-paths.md
+Implementation Part 1: https://github.com/NixOS/nixpkgs/pull/237439
+__cleanAttrs PR: https://github.com/NixOS/nixpkgs/pull/217243
+mergeAttrsList PR: https://github.com/NixOS/nixpkgs/pull/244187
