@@ -1,0 +1,21 @@
+00:00	Intro
+00:47	Q: Compiling CPython from source
+01:55	Python packages structure in nixpkgs
+03:07	Adding Python version to pythonInterpreters
+09:50	fetchurl vs fetchzip with GitHub
+12:20	Back to building CPython, adding patches
+17:13	Look for build times in Hydra
+18:37	Limiting parallelism in build process
+19:52	Adding CPython version in overlay
+22:06	Simple flake with an overlay
+25:52	Adjusting code from nixpkgs in overlay
+26:47	Aside: callPackage and __splicedPackages
+35:00	Back to passing arguments to CPython build
+37:54	Overriding src definition
+40:56	Adding patches
+44:49	Fixing source hash
+46:30	Pinning nixpkgs revision in flake
+48:26	Overriding pythonInterpreters and .override
+55:35	Making sure master CPython runs
+56:24	Could we use overrideAttrs on last CPython version?
+58:10	Outro
